@@ -4,8 +4,15 @@ class multiplytestcase(unittest.testcase):
 
   def test_1(self):
 
-result=multiplication(3,4)
-self.assertequal(result,12)
+result=multiplication(3, 4)
+self.assertequal(result, 12)
+
+def test_2(self):
+
+result=multiplication(3, -4)
+self.assertequal(result, -12)
+
+
 
 if_name_=='_main_':
 unittest.main()
